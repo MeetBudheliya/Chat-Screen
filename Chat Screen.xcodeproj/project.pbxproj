@@ -13,6 +13,12 @@
 		9C86DEC32B9ECB91002E6D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C86DEC12B9ECB91002E6D84 /* Main.storyboard */; };
 		9C86DEC52B9ECB92002E6D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C86DEC42B9ECB92002E6D84 /* Assets.xcassets */; };
 		9C86DEC82B9ECB92002E6D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C86DEC62B9ECB92002E6D84 /* LaunchScreen.storyboard */; };
+		9C86DEDA2B9ECD5E002E6D84 /* MessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86DED82B9ECD5E002E6D84 /* MessageTVC.swift */; };
+		9C86DEDB2B9ECD5E002E6D84 /* MessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C86DED92B9ECD5E002E6D84 /* MessageTVC.xib */; };
+		9C86DEDD2B9EDE08002E6D84 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86DEDC2B9EDE08002E6D84 /* Extensions.swift */; };
+		9C86DEE32B9EDF87002E6D84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86DEE22B9EDF87002E6D84 /* Constants.swift */; };
+		9C86DEE52B9EE022002E6D84 /* Records.json in Sources */ = {isa = PBXBuildFile; fileRef = 9C86DEE42B9EE022002E6D84 /* Records.json */; };
+		9C86DEE72B9EE115002E6D84 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86DEE62B9EE115002E6D84 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		9C86DEC42B9ECB92002E6D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C86DEC72B9ECB92002E6D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C86DEC92B9ECB92002E6D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C86DED82B9ECD5E002E6D84 /* MessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTVC.swift; sourceTree = "<group>"; };
+		9C86DED92B9ECD5E002E6D84 /* MessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTVC.xib; sourceTree = "<group>"; };
+		9C86DEDC2B9EDE08002E6D84 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9C86DEE22B9EDF87002E6D84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C86DEE42B9EE022002E6D84 /* Records.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Records.json; sourceTree = "<group>"; };
+		9C86DEE62B9EE115002E6D84 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,75 @@
 			children = (
 				9C86DEBB2B9ECB91002E6D84 /* AppDelegate.swift */,
 				9C86DEBD2B9ECB91002E6D84 /* SceneDelegate.swift */,
-				9C86DEBF2B9ECB91002E6D84 /* ViewController.swift */,
-				9C86DEC12B9ECB91002E6D84 /* Main.storyboard */,
-				9C86DEC42B9ECB92002E6D84 /* Assets.xcassets */,
-				9C86DEC62B9ECB92002E6D84 /* LaunchScreen.storyboard */,
-				9C86DEC92B9ECB92002E6D84 /* Info.plist */,
+				9C86DEE42B9EE022002E6D84 /* Records.json */,
+				9C86DED42B9ECBFD002E6D84 /* Controllers */,
+				9C86DED62B9ECCEA002E6D84 /* Views */,
+				9C86DEE82B9EE119002E6D84 /* Models */,
+				9C86DED32B9ECBF1002E6D84 /* Storyboards */,
+				9C86DED52B9ECC07002E6D84 /* Utils */,
+				9C86DEDE2B9EDE0C002E6D84 /* Helpers */,
 			);
 			path = "Chat Screen";
+			sourceTree = "<group>";
+		};
+		9C86DED32B9ECBF1002E6D84 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DEC12B9ECB91002E6D84 /* Main.storyboard */,
+				9C86DEC62B9ECB92002E6D84 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9C86DED42B9ECBFD002E6D84 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DEBF2B9ECB91002E6D84 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9C86DED52B9ECC07002E6D84 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DEC42B9ECB92002E6D84 /* Assets.xcassets */,
+				9C86DEC92B9ECB92002E6D84 /* Info.plist */,
+				9C86DEE22B9EDF87002E6D84 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9C86DED62B9ECCEA002E6D84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DED72B9ECCF2002E6D84 /* Table Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C86DED72B9ECCF2002E6D84 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DED82B9ECD5E002E6D84 /* MessageTVC.swift */,
+				9C86DED92B9ECD5E002E6D84 /* MessageTVC.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		9C86DEDE2B9EDE0C002E6D84 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DEDC2B9EDE08002E6D84 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C86DEE82B9EE119002E6D84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C86DEE62B9EE115002E6D84 /* ChatModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +157,8 @@
 			dependencies = (
 			);
 			name = "Chat Screen";
+			packageProductDependencies = (
+			);
 			productName = "Chat Screen";
 			productReference = 9C86DEB82B9ECB91002E6D84 /* Chat Screen.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,8 @@
 				Base,
 			);
 			mainGroup = 9C86DEAF2B9ECB91002E6D84;
+			packageReferences = (
+			);
 			productRefGroup = 9C86DEB92B9ECB91002E6D84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C86DEC82B9ECB92002E6D84 /* LaunchScreen.storyboard in Resources */,
+				9C86DEDB2B9ECD5E002E6D84 /* MessageTVC.xib in Resources */,
 				9C86DEC52B9ECB92002E6D84 /* Assets.xcassets in Resources */,
 				9C86DEC32B9ECB91002E6D84 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C86DEC02B9ECB91002E6D84 /* ViewController.swift in Sources */,
+				9C86DEDA2B9ECD5E002E6D84 /* MessageTVC.swift in Sources */,
 				9C86DEBC2B9ECB91002E6D84 /* AppDelegate.swift in Sources */,
+				9C86DEE72B9EE115002E6D84 /* ChatModel.swift in Sources */,
+				9C86DEDD2B9EDE08002E6D84 /* Extensions.swift in Sources */,
 				9C86DEBE2B9ECB91002E6D84 /* SceneDelegate.swift in Sources */,
+				9C86DEE52B9EE022002E6D84 /* Records.json in Sources */,
+				9C86DEE32B9EDF87002E6D84 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +376,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5527LT3H8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Chat Screen/Info.plist";
+				INFOPLIST_FILE = "Chat Screen/Utils/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +404,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5527LT3H8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Chat Screen/Info.plist";
+				INFOPLIST_FILE = "Chat Screen/Utils/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
